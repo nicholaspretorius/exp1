@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+    section
+        h1= title
+        if name
+            h2 Welcome! #{name}!
+        else 
+            h2 Welcome stranger!
+        //a(href='/hello') Enter
+        form(action='/goodbye', method='post')
+            button(type='submit') Goodbye
