@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+    .wrapper
+        h3 About Us
+        p= text
+        
+        if hint
+            i Hint #{hint}
+
+        p
+            a(href=`${href}`) #{link}
+        p
+            a(href='/about') Next card
